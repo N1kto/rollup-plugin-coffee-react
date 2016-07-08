@@ -1,4 +1,4 @@
-# rollup coffee react plugin
+# Rollup Coffee React Plugin
 
 Basically this is a simple wrapper around [coffee-react-transform](https://github.com/jsdf/coffee-react-transform).
 It enables rollup to bundle your `.cjsx` files.
@@ -26,7 +26,7 @@ export default {
 
 ## Usage with other rollup plugins
 Since `coffee-script` doesn't compile into ES6 modules, you'd probably need [commonjs plugin](https://github.com/rollup/rollup-plugin-commonjs) too.
-Just don't forget to add `.coffee`, `.cjsx` to commonjs's `extensions` option. For exmaple:
+Just don't forget to add `.coffee`, `.cjsx` to commonjs's `extensions` option. For example:
 
 ```js
 import coffeeReact from 'rollup-plugin-coffee-react'
@@ -48,5 +48,5 @@ export default {
 
 ## Options
 
-Rollup's `include`, `exclude` are supported.
-You can also pass options for `coffee-script` to configure `coffee -> js` transpiling. Please refere to [coffee-script](https://github.com/jashkenas/coffeescript) documentation for details.
+Rollup's `include`, `exclude` plugin options are supported.
+You can also pass options for `coffee-script` to configure `coffee -> js` transpiling. Please refer to [coffee-script](https://github.com/jashkenas/coffeescript) documentation for details.
