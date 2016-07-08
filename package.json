@@ -14,8 +14,15 @@
     "cjsx",
     "coffeescript"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "Ievgen Martynov <good.martynov@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konsumer/rollup-plugin-jsx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/konsumer/rollup-plugin-jsx/issues"
+  },
   "dependencies": {
     "coffee-react-transform": "^4.0.0",
     "coffee-script": "^1.10.0",
