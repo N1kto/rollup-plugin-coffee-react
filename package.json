@@ -18,10 +18,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/konsumer/rollup-plugin-jsx.git"
+    "url": "git+https://github.com/N1kto/rollup-plugin-coffee-react.git"
   },
   "bugs": {
-    "url": "https://github.com/konsumer/rollup-plugin-jsx/issues"
+    "url": "https://github.com/N1kto/rollup-plugin-coffee-react/issues"
   },
   "dependencies": {
     "coffee-react-transform": "^4.0.0",

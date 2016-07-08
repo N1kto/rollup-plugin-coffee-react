@@ -36,7 +36,7 @@ var defaultOptions = {
   sourceMap: true
 }
 
-function cjsx (options) {
+function coffeeReact (options) {
   if ( options === void 0 ) options = {};
 
   options = assign({}, defaultOptions, options)
@@ -63,4 +63,4 @@ function cjsx (options) {
   }
 }
 
-export default cjsx;
+export default coffeeReact;
