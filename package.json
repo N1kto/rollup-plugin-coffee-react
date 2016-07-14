@@ -25,8 +25,10 @@
   },
   "dependencies": {
     "coffee-react-transform": "^4.0.0",
-    "coffee-script": "^1.10.0",
     "rollup-pluginutils": "^1.5.1"
+  },
+  "peerDependencies": {
+    "coffee-script": "^1.10.0"
   },
   "devDependencies": {
     "rollup": "^0.33.0",
