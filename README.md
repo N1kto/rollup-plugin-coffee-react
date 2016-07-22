@@ -25,8 +25,8 @@ export default {
 ```
 
 ## Usage with other rollup plugins
-Since `coffee-script` doesn't compile into ES6 modules, you'd probably need [commonjs plugin](https://github.com/rollup/rollup-plugin-commonjs) too.
-Just don't forget to add `.coffee`, `.cjsx` to commonjs's `extensions` option. For example:
+Since `coffee-script` compiles into ES5 code, you'll use this plugin in tandem with [commonjs](https://github.com/rollup/rollup-plugin-commonjs) and [node-resolve](https://github.com/rollup/rollup-plugin-node-resolve) plugins.
+Just don't forget to add `.coffee`, `.cjsx` to mentioned plugins' `extensions` option. For example:
 
 ```js
 import coffeeReact from 'rollup-plugin-coffee-react'
@@ -38,6 +38,11 @@ export default {
   plugins: [
     coffeeReact({
       exclude: 'node_modules/**'
+    }),
+    nodeResolve({
+      main: true,
+      browser: true,
+      extensions: [ '.js', '.coffee', '.csjx' ]
     }),
     commonjs({
       extensions: [ '.js', '.coffee', '.cjsx' ]
